@@ -20,5 +20,6 @@ ADD dwarves-1.17-1.el7.x86_64.rpm  /
 ADD libdwarves1-1.17-1.el7.x86_64.rpm  /
 ADD libdwarves1-devel-1.17-1.el7.x86_64.rpm /
 RUN rpm -ivh --force dwarves-1.17-1.el7.x86_64.rpm  libdwarves1-1.17-1.el7.x86_64.rpm libdwarves1-devel-1.17-1.el7.x86_64.rpm 
+RUN rm -rf dwarves-1.17-1.el7.x86_64.rpm  libdwarves1-1.17-1.el7.x86_64.rpm libdwarves1-devel-1.17-1.el7.x86_64.rpm
 RUN source /etc/bashrc
 CMD ["/bin/bash"]
