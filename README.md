@@ -5,4 +5,5 @@ ex:docker build -t  build_kernel:v1 .
 docker run -ti -v $PWD:/data build_kernel:v1 /bin/bash
 sh build_kernel.sh 5.16 
 notes：5.16 represent linux version
+frankzfz.config is default config from centos8, CONFIG_SYSTEM_TRUSTED_KEYS remove。
 
